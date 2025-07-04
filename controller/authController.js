@@ -54,7 +54,8 @@ const login = async (req, res, next) => {
   } catch (err) {
     next(err);
   }
-};
+}; //update query
+
 const verifypin = async (req, res, next) => {
   try {
     const { phoneNumber, pin } = req.body;
